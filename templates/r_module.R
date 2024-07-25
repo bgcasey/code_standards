@@ -1,48 +1,64 @@
 # ---
-# title: "R functions template"
-# author: "Brendan Casey"
-# created: "2024-07-25"
+# title: "Title"
+# author: "Your Name"
+# created: "YYYY-MM-DD"
 # description: 
-#   "Template for creating properly formatted and  
-#   documented R functions"
+#   "This script performs [describe the main purpose of the script].
+#   It includes steps to [briefly describe the main steps or processes].
+#   The script uses [briefly describe data or object inputs]
+#   The final output is [describe the final output]."
 # ---
 
+# 1. Setup ----
 
-#' [Title of the Function]
-#'
-#' [Brief description of what the function does]
-#'
-#' @param [param_name] [Type and description of the parameter]
-#' @param [param_name] [Type and description of the parameter]
-#' @param [param_name] [Type and description of the parameter]
-#' @return [Description of the return value or object]
-#' 
-#' @example # Example usage of the function
-#' [Example data creation]
-#' [Example function call]
-#' [Example result printing]
-[function_name] <- function([param1], [param2], 
-                            [param3] = [default_value], 
-                            [param4]) {
-  # [Step 1: Description of what this step does]
-  [code for step 1]
-  
-  # [Step 2: Description of what this step does]
-  if (!is.null([param3])) {
-    if (!is.numeric([param3])) {
-      stop("[Error message if param3 is not numeric]")
-    }
-    [code for step 2]
-  }
-  
-  # [Step 3: Description of what this step does]
-  [code for step 3]
-  
-  # [Step 4: Description of what this step does]
-  [code for step 4]
-  
-  # [Step 5: Description of what this step does]
-  [code for step 5]
-  
-  return([result])
-}
+## 1.1 Load packages ----
+# Include comments for what the packages are used for
+# Example:
+library(tidyverse) # data manipulation and visualization
+library(lubridate) # manipulating date times
+
+## 1.2 Import data ----
+# Load your data here
+# Example:
+# data <- read.csv("path/to/your/data.csv")
+
+# 2. [heading] ----
+# This section [describe the purpose of this section].
+# The section uses [briefly describe data or object inputs].
+# It includes steps to [briefly describe the main steps or processes].
+# The section produces [describe the section's output].
+
+## 2.1 [subheading] ----
+
+## 2.2 [subheading] ----
+
+# 3. [heading]  ----
+# This section [describe the purpose of this section].
+# The section uses [briefly describe data or object inputs].
+# It includes steps to [briefly describe the main steps or processes].
+# The section produces [describe the section's output].
+
+## 3.1 [subheading] ----
+
+# 4. [heading]  ----
+# This section [describe the purpose of this section].
+# The section uses [briefly describe data or object inputs].
+# It includes steps to [briefly describe the main steps or processes].
+# The section produces [describe the section's output].
+
+## 4.1 [subheading] ----
+
+# 5. [heading]  ----
+# Description of step 5 code.
+
+## 5.1 [subheading] ----
+
+# 6. [heading]  ----
+# This section [describe the purpose of this section].
+# The section uses [briefly describe data or object inputs].
+# It includes steps to [briefly describe the main steps or processes].
+# The section produces [describe the section's output].
+
+## 6.1 [subheading] ----
+
+## 6.2 [subheading] ----
