@@ -18,7 +18,7 @@
 #' @return [Description of the return value or object]
 #' 
 #' @example # Example usage of the function
-#' [Example data creation]
+#' [Example data]
 #' [Example function call]
 #' [Example result printing]
 [function_name] <- function([param1], [param2], 
@@ -28,12 +28,7 @@
   [code for step 1]
   
   # [Step 2: Description of what this step does]
-  if (!is.null([param3])) {
-    if (!is.numeric([param3])) {
-      stop("[Error message if param3 is not numeric]")
-    }
-    [code for step 2]
-  }
+  [code for step 2]
   
   # [Step 3: Description of what this step does]
   [code for step 3]
