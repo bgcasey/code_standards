@@ -1,24 +1,3 @@
-## Table of Contents
-
-- [Code standards and templates](#code-standards-and-templates)
-- [Code Styling](#code-styling)
-  - [Filenames](#filenames)
-  - [Object names](#object-names)
-  - [Code Syntax](#code-syntax)
-  - [Auto-styling](#auto-styling)
-- [Documenting code](#documenting-code)
-  - [Code header](#code-header)
-  - [Code body](#code-body)
-    - [Setup](#setup)
-    - [Section headings](#section-headings)
-- [Functions](#functions)
-  - [Function Header](#function-header)
-    - [Components of a well-documented function](#components-of-a-well-documented-function)
-  - [Function body](#function-body)
-- [Project Directory Structure](#project-directory-structure)
-
-
-
 # Code standards and templates
 
 ![In Development](https://img.shields.io/badge/Status-In%20Development-yellow)
@@ -41,6 +20,14 @@ The goal of this repository is to share standards that can improve collaboration
     - Revisiting old projects is easier when everything is clearly labeled, well-documented, and logically structured. Doing so minimizes the learning curve when you return to a project.
 
 While the examples provided focus on R, the basic principles can be applied to other coding languages. Clear documentation, organized file structures, and consistent coding styles enhances reproducibility and collaboration across different programming environments.
+
+---
+
+## Table of Contents
+- [Code Styling](#code-styling)
+- [Documenting Code](#documenting-code)
+- [Documenting Functions](#documenting-functions)
+- [Project Directory Structure](#project-directory-structure)
 
 ---
 ## Code Styling
@@ -120,7 +107,7 @@ See the `styler` [documentation](https://styler.r-lib.org/) for further informat
 
 
 ---
-## Documenting code
+## Documenting Code
 
 Properly documenting your code is essential for reproducible. It ensures that colleagues and reviewers fully understand your rational, methods, and project outputs. This repository provides templates for properly structured and documented  [R modules](https://github.com/bgcasey/code_standards/blob/main/templates/r_module.R) and [R functions]( [r_function.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_function.R)) . While there are many ways to document code, all code documentation should include the following core components:
 
@@ -198,7 +185,7 @@ Each section should be subdivided further with descriptive numbered subheadings 
 filtered_data <- data %>% filter(variable == "value")
 ```
 
-## Functions
+## Documenting Functions
 
 Properly documenting your functions ensures that they are easy to understand and use, not just by yourself but by collaborators and future users. Below is a breakdown of the essential components of a well-documented function.
 
