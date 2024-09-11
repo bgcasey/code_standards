@@ -2,7 +2,7 @@
 # title: "R functions template"
 # author: "Brendan Casey"
 # created: "2024-07-25"
-# description: 
+# notes: 
 #   "Template for creating properly formatted and  
 #   documented R functions"
 # ---
