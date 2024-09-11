@@ -2,20 +2,24 @@
 # title: "Title"
 # author: "Your Name"
 # created: "YYYY-MM-DD"
-# description: 
+# inputs: [list the required input files]
+# outputs: [list the output files produced by the script]
+# notes: 
 #   "This script performs [describe the main purpose of the script].
-#   It includes steps to [briefly describe the main steps or processes].
-#   The script uses [briefly describe data or object inputs]
-#   The final output is [describe the final output]."
+#   The script uses [briefly describe data or object inputs] to 
+#   [briefly describe the main steps or processes]. The script
+#   produces [describe the final output]."
 # ---
 
 # 1. Setup ----
 
 ## 1.1 Load packages ----
 # Include comments for what the packages are used for
+# Specify the package version for reproducibility.
 # Example:
-library(tidyverse) # data manipulation and visualization
-library(lubridate) # manipulating date times
+library(tidyverse) # data manipulation and visualization (version: 1.3.1)
+library(lubridate) # manipulating date times (version: 1.7.10)
+library(ggplot2)   # visualization (version: 3.3.5)
 
 ## 1.2 Import data ----
 # Load your data here
