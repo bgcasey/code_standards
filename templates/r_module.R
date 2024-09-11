@@ -66,3 +66,5 @@ library(ggplot2)   # visualization (version: 3.3.5)
 ## 6.1 [subheading] ----
 
 ## 6.2 [subheading] ----
+
+# End of script ----
