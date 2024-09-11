@@ -1,3 +1,24 @@
+## Table of Contents
+
+- [Code standards and templates](#code-standards-and-templates)
+- [Code Styling](#code-styling)
+  - [Filenames](#filenames)
+  - [Object names](#object-names)
+  - [Code Syntax](#code-syntax)
+  - [Auto-styling](#auto-styling)
+- [Documenting code](#documenting-code)
+  - [Code header](#code-header)
+  - [Code body](#code-body)
+    - [Setup](#setup)
+    - [Section headings](#section-headings)
+- [Functions](#functions)
+  - [Function Header](#function-header)
+    - [Components of a well-documented function](#components-of-a-well-documented-function)
+  - [Function body](#function-body)
+- [Project Directory Structure](#project-directory-structure)
+
+
+
 # Code standards and templates
 
 ![In Development](https://img.shields.io/badge/Status-In%20Development-yellow)
