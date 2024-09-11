@@ -273,4 +273,4 @@ It's recommended that data, code, and output files are contained and organized u
 | └── reports/             | Reports and additional documents  |
 | **README.md**            | Project overview and instructions |
 
-A template repository can be found [here](https://github.com/bgcasey/rProject_template/settings).  It can be used to generate new GitHub repositories with the same directory structure. While the template repository is designed for rProjects, projects in other programming environments should maintain a similar structure. 
+A template repository can be found [here](https://github.com/bgcasey/rProject_template).  It can be used to generate new GitHub repositories with the same directory structure. While the template repository is designed for rProjects, projects in other programming environments should maintain a similar structure. 
