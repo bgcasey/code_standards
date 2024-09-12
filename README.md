@@ -97,7 +97,7 @@ See the `styler` [documentation](https://styler.r-lib.org/) for instructions on 
 ---
 ## 2. Documenting Code
 
-Proper documentation is crucial for ensuring code reproducibility. It allows colleagues and reviewers to fully understand your rationale, methods, and outputs. While there are many ways to document code, here are some recomendations outlined in the template files:
+Proper documentation is crucial for ensuring code reproducibility. It allows colleagues and reviewers to fully understand your rationale, methods, and outputs. While there are many ways to document code, here are some recomendations:
 
 ### Code header
 Scripts should start with a header that includes the following components:
