@@ -2,24 +2,24 @@
 
 ![In Development](https://img.shields.io/badge/Status-In%20Development-yellow)
 
-
-This repository describes best practices for writing reproducible code and structuring project directories. It provides templates for writing and formatting R code and emphasizes maintaining clear documentation and organization throughout a research project. 
+This repository outlines best practices for writing reproducible code and structuring project directories. It provides templates for writing and formatting R code, and emphasizes the importance of clear documentation and organization throughout a research project.
 
 Templates include:
 - [r_module.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_module.R): A template for writing individual R modules.
-- [r_function.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_function.R): A template for writing well documented and formatted R functions. 
+- [r_function.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_function.R): A template for writing well-documented and formatted R functions.
+- [r_project_template](https://github.com/bgcasey/r_project_template): An R project template that provides a structured directory for organizing data, scripts, outputs, and documentation.  
 
-The goal of this repository is to share standards that can improve collaboration, streamline in-house code reviews, and make it easier to revisit past work. 
+The goal of this repository is to provide standards that improve collaboration, streamline code reviews, and make it easier to revisit past work.
 
 **Why use these standards?**
 1. **Sharing work with colleagues**:
-    - By following standardized templates and code conventions, collaborators can easily understand, run, and build on your work. Proper documentation and a clear project structure makes it easier for others to contribute and troubleshoot issues.
+    - Standardized templates and code conventions ensure that collaborators can easily understand, run, and build upon your work.
 2. **In-house review of your work**:
-    - A reproducible and well-organized codebase enables smooth internal reviews. Team members or supervisors can quickly understand your methods and results by reviewing the code itself.
+    - A well-organized, reproducible codebase makes internal reviews easier. Team members or supervisors can quickly grasp your methods and results by examoming the code, making it easier to identify and troubleshoot any issues.
 3. **Sharing work with your future self**:
-    - Revisiting old projects is easier when everything is clearly labeled, well-documented, and logically structured. Doing so minimizes the learning curve when you return to a project.
+    - Revisiting old projects is easier when everything is well-documented and logically structured. This reduces the learning curve when returning to a project after time away.
 
-While the examples provided focus on R, the basic principles can be applied to other coding languages. Clear documentation, organized file structures, and consistent coding styles enhances reproducibility and collaboration across different programming environments.
+While the examples provided are focused on R, the basic principles apply to any coding language. Clear documentation, structured file organization, and consistent coding styles enhances reproducibility and collaboration across different programming environments.
 
 ---
 
@@ -32,26 +32,26 @@ While the examples provided focus on R, the basic principles can be applied to o
 ---
 ## 1. Code Styling
 
-Style R code according to the conventions outlined in the [tidyverse style guide](https://style.tidyverse.org/index.html).  Google's [R style guide](https://google.github.io/styleguide/Rguide.html) is based in this. While it is recommended that you familiarize yourself with the  [tidyverse style guide](https://style.tidyverse.org/index.html), here are some highlights:
+Style R code according to the conventions outlined in the [tidyverse style guide](https://style.tidyverse.org/index.html).  Google's [R style guide](https://google.github.io/styleguide/Rguide.html) is based in this. While you are encouraged to familiarize yourself with the tidyverse guide, here are some highlights:
 
 ### Filenames
 
-Give your files meaningful names and avoid special characters. Use a consistent file naming convention. Naming conventions include:
+Give your files meaningful names and avoid special characters. Use a consistent naming convention:
 
 - **snake_case**:
     - Words are separated by underscores (`_`).
-    - All letters are typically lowercase.
+    - Letters are lowercase.
     - Example: `1_your_code_name.R`.
 - **kebab-case**:
     - Words are separated by hyphens (`-`).
-    - All letters are usually lowercase.
+    - Letters are lowercase.
     - Example: `1-your-code-name.R`.
 - **camelCase**:
-    - The first word is lowercase, and each subsequent word starts with a capital letter.
+    - The first word is lowercase, and subsequent words start with a capital letter.
     - No spaces or special characters between words.
     - Example: `1YourCodeName.R`.
 
-Prefix files with numbers to show the order in which files should be run:
+Prefix files with numbers to show the order that files should be run:
 
 ```
 00_process_response_data.R
@@ -63,56 +63,44 @@ Prefix files with numbers to show the order in which files should be run:
 
 ### Object names
 
-Similar to file names, object names within code should be concise, descriptive, and follow and consistent naming convention.
+Object names within the code should be concise, descriptive, and follow a consistent naming convention:
 
 ```R
 bird_data <- read.csv("bird_species_data.csv")
-pred_data <- read.csv("predictor_variables.csv")
+pred_var <- read.csv("predictor_variables.csv")
 ```
 
 
 
 ### Code Syntax
 
-- Put spaces after commas
-- Place a space after `()` 
+- Add spaces after commas
+- Place a space after `()` in functions. 
 - `{{ }}` should have inner spaces
-- Operators (`==, +, -, `<-`, etc.) should always be surrounded by spaces.
-- Surround operators (`==, +, -, `<-`, etc.) with spaces.
+- Surround operators (`==`, `+`, `-`, `<-`, etc.) with spaces.
 - For curly brackets `{}`, end lines with `{` and start lines with `}`
-- Limit the line width of your code to 80 characters. This will enhance readability and ensure that the code can be printed or displayed without cropping. 
 - Use `<-` to assign object names.
-- Comment your code to explain what your code is doing, it's inputs, outputs, and and your rational. Comments should begin with a `#` followed by a space. See the [R module template](https://github.com/bgcasey/code_standards/blob/main/templates/r_module.R) in this repository for an example of how to comment code. 
-
+- Limit the line width of your code to 80 characters for readability. This will ensure that the code can be printed or displayed without cropping. 
+- Comment your code to explain its purpose, inputs, outputs, and rationale. Comments should begin with # followed by a space.
+- 
 ### Auto-styling
 
-R code can be reformatted to the [tidyverse style guide](https://style.tidyverse.org/index.html) automatically using the `styler` R package:
+R code can be automatically formatted according to the [tidyverse style guide](https://style.tidyverse.org/index.html) using the `styler` R package:
 
 ```r
 library(styler)
 styler::style_file("file/path/file.R", style = tidyverse_style)
 ```
 
-#### Object names
-
-Similar to filenames, within your code, object names should be descriptive, concise, and follow consistent naming conventions.
-
-```R
-# examples
-respon_var
-pred_var
-```
-
-See the `styler` [documentation](https://styler.r-lib.org/) for further information and  instructions on how to integrate `styler` into the RStudio GUI. 
-
+See the `styler` [documentation](https://styler.r-lib.org/) for instructions on how to integrate `styler` into the RStudio GUI. 
 
 ---
 ## 2. Documenting Code
 
-Properly documenting your code is essential for reproducible. It ensures that colleagues and reviewers fully understand your rational, methods, and project outputs. This repository provides templates for properly structured and documented  [R modules](https://github.com/bgcasey/code_standards/blob/main/templates/r_module.R) and [R functions]( [r_function.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_function.R)) . While there are many ways to document code, all code documentation should include the following core components:
+Proper documentation is crucial for ensuring code reproducibility. It allows colleagues and reviewers to fully understand your rationale, methods, and outputs. While there are many ways to document code, here are some recomendations outlined in the template files:
 
 ### Code header
-Script should begin with a header that includes the following components:
+Scripts should start with a header that includes the following components:
 
 | **Component** | **Description**                                                                                                    |
 | ------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -124,7 +112,7 @@ Script should begin with a header that includes the following components:
 | **Notes**     | A concise explanation of what the code does, its purpose, and any important details about its function.            |
 
 
-Here is an example header in a YAML-like format:
+**Example header in YAML-like format:**
 
 ```R
 # ---
@@ -144,13 +132,13 @@ Here is an example header in a YAML-like format:
 
 ## Code body
 
-The body of your script should be divided into clear, well-labeled, numbered sections to make it easier for collaborators and reviewers to follow the logic of your code. Below is the recommended structure for the body of the code:
+The body of your script should be divided into clear, well-labeled, numbered sections for easy navigation:
 
 ### Setup
 
-Start your code with a setup section. This section includes all the necessary setup steps, such as loading packages and importing data. The setup will usually include the following subsections:
+Start with a setup section. This section will usually include the following subsections:
 
-- **Load packages**: List all the required R packages, each accompanied by a comment explaining their use, and the package version to ensure reproducibility.
+- **Load packages**: List all the required R packages, each accompanied by a comment explaining their use and package version.
 
 ```R
 ## 1.1 Load packages ----
@@ -168,7 +156,7 @@ library(lubridate)   # date-time manipulation (version: 1.7.10)
 
 ### Section headings
 
-Each subsequent section of the script should include a numbered heading that describes the purpose of the section. This makes it easier for others to understand the logical flow of the script. For example:
+Each subsequent section of the script should include a descriptibve numbered heading. Beneath the heading, include a comment describing the section's purpose. This makes it easier for others to understand the logical flow of the script. For example:
 
 ```R
 # 2. Data Cleaning ---- 
@@ -177,7 +165,7 @@ Each subsequent section of the script should include a numbered heading that des
 # transforms variables.
 ```
 
-Each section should be subdivided further with descriptive numbered subheadings where necessary.
+Subdivide sections as needed with descriptive numbered subheadings:
 
 ```R
 ## 2.1 Filter data ----
@@ -185,15 +173,15 @@ Each section should be subdivided further with descriptive numbered subheadings 
 filtered_data <- data %>% filter(variable == "value")
 ```
 
+---
+
 ## 3. Documenting Functions
 
-Properly documenting your functions ensures that they are easy to understand and use, not just by yourself but by collaborators and future users. Below is a breakdown of the essential components of a well-documented function.
+Functions should be well-documented to ensure they are understandable and easy to use. See [Roxygen2](https://roxygen2.r-lib.org/) for more information on function style conventions.
 
 ### Function Header
 
-Each R function should include a detailed header that documents the function's purpose, its inputs (parameters), and the expected output. The provided template follows the [Roxygen2](https://roxygen2.r-lib.org/) style.
-
-#### Components of a well-documented function
+Each function should have a header that describes the function's purpose, its inputs (parameters), and the expected output:
 
 | **Component**   | **Description**                                                                                                                                                              |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -205,7 +193,7 @@ Each R function should include a detailed header that documents the function's p
 
 ### Function body
 
-The body consists of the actual code that implements the function. Each major step should include a numbered comment explaining its purpose. This makes it easier for users to understand the function and debug any issues.
+The function body contains the code that implements the function. Each major step in the code should include a numbered comment explaining its purpose. This helps users understand the function and makes debugging easier.
 
 **Recommended structure for a function:**
 
@@ -248,7 +236,7 @@ The body consists of the actual code that implements the function. Each major st
 ---
 ## 4. Project Directory Structure
 
-It's recommended that data, code, and output files are contained and organized using the following project directory structure:
+Data, code, and output files should be organized within a well-structured directory. For example:
 
 | **Item**                 | **Description**                   |
 | ------------------------ | --------------------------------- |
@@ -273,4 +261,4 @@ It's recommended that data, code, and output files are contained and organized u
 | └── reports/             | Reports and additional documents  |
 | **README.md**            | Project overview and instructions |
 
-A template repository can be found [here](https://github.com/bgcasey/rProject_template).  It can be used to generate new GitHub repositories with the same directory structure. While the template repository is designed for rProjects, projects in other programming environments should maintain a similar structure. 
+A template repository can be found [here](https://github.com/bgcasey/r_project_template). It can be used to generate new GitHub repositories with the above directory structure. While the template is designed for R projects, projects in other programming environments should maintain a similar directory structure. 
