@@ -2,7 +2,7 @@
 
 ![In Development](https://img.shields.io/badge/Status-In%20Development-yellow)
 
-This repository outlines best practices for writing reproducible code and structuring project directories. It provides templates for writing and formatting R code, and emphasizes the importance of clear documentation and organization throughout a research project.
+This repository outlines best practices for writing reproducible code, structuring project directories, and provides templates for writing and formatting R code.
 
 Templates include:
 - [r_module.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_module.R): A template for writing individual R modules.
