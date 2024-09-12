@@ -27,7 +27,7 @@ While the examples provided are focused on R, the basic principles apply to any 
 - [Code Style](#code-style)
 - [Documenting Code](#documenting-code)
 - [Documenting Functions](#documenting-functions)
-- [4. Project Directory Structure](#project-directory-structure)
+- [4. Project Directory Structure](#4-project-directory-structure)
 
 ---
 ## 1. Code Style
