@@ -24,13 +24,13 @@ While the examples provided are focused on R, the basic principles apply to any 
 ---
 
 ## Table of Contents
-- [1. Code Styling](#code-styling)
+- [1. Code Style](#code-style)
 - [2. Documenting Code](#documenting-code)
 - [3. Documenting Functions](#documenting-functions)
 - [4. Project Directory Structure](#project-directory-structure)
 
 ---
-## 1. Code Styling
+## 1. Code Style
 
 Style R code according to the conventions outlined in the [tidyverse style guide](https://style.tidyverse.org/index.html).  Google's [R style guide](https://google.github.io/styleguide/Rguide.html) is based in this. While you are encouraged to familiarize yourself with the tidyverse guide, here are some highlights:
 
