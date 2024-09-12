@@ -24,9 +24,9 @@ While the examples provided are focused on R, the basic principles apply to any 
 ---
 
 ## Table of Contents
-- [1. Code Style](#code-style)
-- [2. Documenting Code](#documenting-code)
-- [3. Documenting Functions](#documenting-functions)
+- [Code Style](#code-style)
+- [Documenting Code](#documenting-code)
+- [Documenting Functions](#documenting-functions)
 - [4. Project Directory Structure](#project-directory-structure)
 
 ---
@@ -95,7 +95,7 @@ styler::style_file("file/path/file.R", style = tidyverse_style)
 See the `styler` [documentation](https://styler.r-lib.org/) for instructions on how to integrate `styler` into the RStudio GUI. 
 
 ---
-## 2. Documenting Code
+## Documenting Code
 
 Proper documentation is crucial for ensuring code reproducibility. It allows colleagues and reviewers to fully understand your rationale, methods, and outputs. While there are many ways to document code, here are some recomendations outlined in the template files:
 
