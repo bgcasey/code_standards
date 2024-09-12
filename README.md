@@ -11,7 +11,7 @@ Templates include:
 
 The goal of this repository is to share standards that can improve collaboration, streamline in-house code reviews, and make it easier to revisit past work. 
 
-**What's the point?**
+**Why use these standards?**
 1. **Sharing work with colleagues**:
     - By following standardized templates and code conventions, collaborators can easily understand, run, and build on your work. Proper documentation and a clear project structure makes it easier for others to contribute and troubleshoot issues.
 2. **In-house review of your work**:
