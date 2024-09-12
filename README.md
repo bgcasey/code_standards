@@ -24,13 +24,13 @@ While the examples provided focus on R, the basic principles can be applied to o
 ---
 
 ## Table of Contents
-- [Code Styling](#code-styling)
-- [Documenting Code](#documenting-code)
-- [Documenting Functions](#documenting-functions)
-- [Project Directory Structure](#project-directory-structure)
+- [1. Code Styling](#code-styling)
+- [2. Documenting Code](#documenting-code)
+- [3. Documenting Functions](#documenting-functions)
+- [4. Project Directory Structure](#project-directory-structure)
 
 ---
-## Code Styling
+## 1. Code Styling
 
 Style R code according to the conventions outlined in the [tidyverse style guide](https://style.tidyverse.org/index.html).  Google's [R style guide](https://google.github.io/styleguide/Rguide.html) is based in this. While it is recommended that you familiarize yourself with the  [tidyverse style guide](https://style.tidyverse.org/index.html), here are some highlights:
 
@@ -107,7 +107,7 @@ See the `styler` [documentation](https://styler.r-lib.org/) for further informat
 
 
 ---
-## Documenting Code
+## 2. Documenting Code
 
 Properly documenting your code is essential for reproducible. It ensures that colleagues and reviewers fully understand your rational, methods, and project outputs. This repository provides templates for properly structured and documented  [R modules](https://github.com/bgcasey/code_standards/blob/main/templates/r_module.R) and [R functions]( [r_function.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_function.R)) . While there are many ways to document code, all code documentation should include the following core components:
 
@@ -185,7 +185,7 @@ Each section should be subdivided further with descriptive numbered subheadings 
 filtered_data <- data %>% filter(variable == "value")
 ```
 
-## Documenting Functions
+## 3. Documenting Functions
 
 Properly documenting your functions ensures that they are easy to understand and use, not just by yourself but by collaborators and future users. Below is a breakdown of the essential components of a well-documented function.
 
@@ -246,7 +246,7 @@ The body consists of the actual code that implements the function. Each major st
 ```
 
 ---
-## Project Directory Structure
+## 4. Project Directory Structure
 
 It's recommended that data, code, and output files are contained and organized using the following project directory structure:
 
