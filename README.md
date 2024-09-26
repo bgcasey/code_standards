@@ -242,7 +242,7 @@ Data, code, and output files should be organized within a well-structured direct
 | ------------------------ | --------------------------------- |
 | **0_data/**              | Raw and manipulated data          |
 | ├── external/            | Raw data from external sources    |
-| ├── manual/              | Data that has been manipulated    |
+| ├── processed/           | Data that has been manipulated    |
 | **1_code/**              | Code and scripts for analysis     |
 | ├── GEE/                 | Google Earth Engine scripts       |
 | │   └── gee_git_clone.sh | Script to clone GEE repository    |
@@ -259,6 +259,9 @@ Data, code, and output files should be organized within a well-structured direct
 | **4_writing/**           | Manuscript and reports            |
 | ├── manuscript/          | Drafts of the manuscript          |
 | └── reports/             | Reports and additional documents  |
+| **5_presentations/**     | Presentation materials            |
+| ├── slides/              | Presentation slides (e.g., .pptx) |
+| └── posters/             | Conference posters                |
 | **README.md**            | Project overview and instructions |
 
 A template repository can be found [here](https://github.com/bgcasey/r_project_template). It can be used to generate new GitHub repositories with the above directory structure. While the template is designed for R projects, projects in other programming environments should maintain a similar directory structure. 
