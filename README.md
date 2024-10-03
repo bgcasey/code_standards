@@ -173,6 +173,8 @@ Subdivide sections as needed with descriptive numbered subheadings:
 filtered_data <- data %>% filter(variable == "value")
 ```
 
+Use four trailing dashes (-), equal signs (=), or hashtags (#) at the end of your headings to create discrete sections that are foldable and navigable within RStudio's  **Jump To** menu at the bottom of the editor.
+
 ---
 
 ## 3. Documenting Functions
