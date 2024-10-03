@@ -109,7 +109,7 @@ Scripts should start with a header that includes the following components:
 | **Date**      | The creation or last modification date of the code, formatted as YYYY-MM-DD for consistency.                       |
 | **Inputs**    | A list of the input data, files, or parameters required for the script to run, including file paths or formats.    |
 | **Outputs**   | A description of the output produced by the script, including file names, formats, and what the results represent. |
-| **Notes**     | A concise explanation of what the code does, its purpose, and any important details about its function.            |
+| **Notes**     | A concise explanation of what the code does, its purpose, and any important details about its function. You can also use this section to list future proposed improvements for the code.           |
 
 
 **Example header in YAML-like format:**
