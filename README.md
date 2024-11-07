@@ -28,7 +28,7 @@ While the examples provided are focused on R, the basic principles apply to any 
 - [2. Documenting Code](#2-documenting-code)
 - [3. Documenting Functions](#3-documenting-functions)
 - [4. Project Directory Structure](#4-project-directory-structure)
-
+- [5. ABMI GitHub Policy](#5-abmi-github-policy)
 ---
 ## 1. Code Style
 
@@ -265,3 +265,76 @@ Data, code, and output files should be organized within a well-structured direct
 | **README.md**            | Project overview and instructions |
 
 A template repository can be found [here](https://github.com/bgcasey/r_project_template). It can be used to generate new GitHub repositories with the above directory structure. While the template is designed for R projects, projects in other programming environments should maintain a similar directory structure. 
+
+
+---
+
+## 5. ABMI GitHub Policy
+
+GitHub (and Git) are powerful tools for facilitating reproducible code repositories. This will allow the ABMI to better showcase the technical work that goes into developing the variety of data products we provide. The purpose of the ABMI GitHub Policy is to provide general information to new users and outline a standard policy for what information is made available. The following document outlines:
+
+1. Member privileges to the organizational GitHub account.  
+2. Repository naming conventions.  
+3. Repository Visibility  
+4. Topic tags
+
+### Member privileges
+
+The Director(s) of the Science Centre are **Owners** of the organizational Github account ([https://github.com/ABbiodiversity](https://github.com/ABbiodiversity)). In addition, the Director(s) can declare a subset of users as **Owners** to manage day to day operations of the account. 
+
+All ABMI staff who use GitHub are able to become a **Member** of the ABMI organizational account ([https://github.com/ABbiodiversity](https://github.com/ABbiodiversity)).  Members are strongly encouraged to make their membership status of the organization public. In addition, anyone outside of ABMI staff that is supporting ABMI work can be added as an **Outside Collaborator** upon approval of the *Current Owners* (Schedule 1).
+
+### Repository Visibility
+
+All repositories that are used as part of work for the ABMI should always be **Private.** This allows for users to develop the repository and all content within it before an official release. The repository should then be made **Public** if it meets to following conditions:
+
+1) Does not contain any sensitive information (e.g., site location, proprietary data products).  
+2) Coincides with or after the release of the associated data product.
+
+Repositories can be maintained as **Private** if they relate to code that is used for internal processes (e.g., data cleaning).
+
+Users are free to initially make these **Private** repositories under their personal GitHub accounts. However, all repositories should be transferred to the ABMI organizational account under the following circumstances:
+
+1) Public release of the data product.  
+2) Private release of a completed data product used for internal purposes.  
+3) Employee no longer works for the ABMI.
+
+Repositories should be **Archived** as read-only (but can remain public) if active development has ceased and is unlikely to occur again in the future. 
+
+We encourage all GitHub users to make their repositories **Public** whenever possible as it showcases both their work, and the work of the ABMI to stakeholders.
+
+#### Releases
+
+Whenever work on a repository has been completed, a **Release** tag should be added. These releases should be versioned using a three digit format that corresponds to major (changes that break functionality), minor (backwards compatible changes), and patches (bug fixes, typos; e.g., v1.0.2).
+
+### Repository naming conventions
+
+In general, repositories should be named using the **Camel Case** format (e.g., StreamConnectivity, BirdModels, etc..). The format within each repository is flexible, but we recommend trying to implement a standardized folder structure when possible. 
+
+Example of the folder structure being adopted by the Science Centre.
+
+* src \- where all source (src) scripts are stored.   
+* bookdown \- contains all information related to the creation of the bookdown page.  
+* docs \-  contains processed files required for hosting Github Pages  
+* data \- any small data sets that are used for the analysis. For most projects, data will not be pushed to Github (i.e., added to GitIgnore).  
+* lookup \- all lookup tables required for performing the analysis. This folder can be hidden.
+
+### Topics 
+Topics are a way for users to add “tags” to their repositories. This allows similar repositories to be grouped together to assist accessibility through search. These tags are under development, but we recommend users implement some of the following tags when possible:
+
+*documentation* \- used to identify if the repository is used as technical documentation of an analysis or workflow.  
+*internal-tool* \- used to identify any repository that is used only for internal workflows.  
+*species-distribution-models* \- used to identify repositories associated with the ABMI species models.  
+*project* \- to differentiate between one off projects and those that will be continually updated.  
+*r-package* \- used to indicate the repository contains an R package with associated functions. 
+
+### Github Pages
+GitHub Pages are a great resource for creating static HTML pages that can be shared ([https://abbiodiversity.github.io/AmphibianModels/](https://abbiodiversity.github.io/AmphibianModels/)). The *Bookdown* format is great for creating technical documents and is fairly easy to create and maintain. Each centre within the ABMI has methods for developing technical documentation, so this is not a requirement for GitHub users.
+
+### Questions
+If you have any questions about your repositories, please contact [Brandon Allen](mailto:brandon.allen@ualberta.ca) or [Marcus Becker](mailto:mabecker@ualberta.ca).
+
+
+
+
+
