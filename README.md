@@ -316,11 +316,11 @@ Example of the [folder structure](#4-project-directory-structure) being adopted 
 ### Topics 
 Topics are a way for users to add “tags” to their repositories. This allows similar repositories to be grouped together to assist accessibility through search. These tags are under development, but we recommend users implement some of the following tags when possible:
 
-*documentation* \- used to identify if the repository is used as technical documentation of an analysis or workflow.  
-*internal-tool* \- used to identify any repository that is used only for internal workflows.  
-*species-distribution-models* \- used to identify repositories associated with the ABMI species models.  
-*project* \- to differentiate between one off projects and those that will be continually updated.  
-*r-package* \- used to indicate the repository contains an R package with associated functions. 
+- *documentation* \- used to identify if the repository is used as technical documentation of an analysis or workflow.  
+- *internal-tool* \- used to identify any repository that is used only for internal workflows.  
+- *species-distribution-models* \- used to identify repositories associated with the ABMI species models.  
+- *project* \- to differentiate between one off projects and those that will be continually updated.  
+- *r-package* \- used to indicate the repository contains an R package with associated functions. 
 
 ### Github Pages
 GitHub Pages are a great resource for creating static HTML pages that can be shared ([https://abbiodiversity.github.io/AmphibianModels/](https://abbiodiversity.github.io/AmphibianModels/)). The *Bookdown* format is great for creating technical documents and is fairly easy to create and maintain. Each centre within the ABMI has methods for developing technical documentation, so this is not a requirement for GitHub users.
