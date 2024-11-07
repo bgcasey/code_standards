@@ -240,7 +240,7 @@ Data, code, and output files should be organized within a well-structured direct
 
 | **Item**                 | **Description**                   |
 | ------------------------ | --------------------------------- |
-| **0_data/**              | Raw and manipulated data          |
+| **0_data/**              | Raw and manipulated data  [^1]    |
 | ├── external/            | Raw data from external sources    |
 | ├── processed/           | Data that has been manipulated    |
 | **1_code/**              | Code and scripts for analysis     |
@@ -266,7 +266,7 @@ Data, code, and output files should be organized within a well-structured direct
 
 A template repository can be found [here](https://github.com/bgcasey/r_project_template). It can be used to generate new GitHub repositories with the above directory structure. While the template is designed for R projects, projects in other programming environments should maintain a similar directory structure. 
 
-
+* For most projects, data will not be pushed to Github (i.e., added to GitIgnore).
 ---
 
 ## 5. ABMI GitHub Policy
@@ -311,13 +311,7 @@ Whenever work on a repository has been completed, a **Release** tag should be ad
 
 In general, repositories should be named using the **Camel Case** format (e.g., StreamConnectivity, BirdModels, etc..). The format within each repository is flexible, but we recommend trying to implement a standardized folder structure when possible. 
 
-Example of the folder structure being adopted by the Science Centre.
-
-* src \- where all source (src) scripts are stored.   
-* bookdown \- contains all information related to the creation of the bookdown page.  
-* docs \-  contains processed files required for hosting Github Pages  
-* data \- any small data sets that are used for the analysis. For most projects, data will not be pushed to Github (i.e., added to GitIgnore).  
-* lookup \- all lookup tables required for performing the analysis. This folder can be hidden.
+Example of the [folder structure](#4-project-directory-structure) being adopted by the Science Centre.
 
 ### Topics 
 Topics are a way for users to add “tags” to their repositories. This allows similar repositories to be grouped together to assist accessibility through search. These tags are under development, but we recommend users implement some of the following tags when possible:
@@ -334,6 +328,9 @@ GitHub Pages are a great resource for creating static HTML pages that can be sha
 ### Questions
 If you have any questions about your repositories, please contact [Brandon Allen](mailto:brandon.allen@ualberta.ca) or [Marcus Becker](mailto:mabecker@ualberta.ca).
 
+---
+
+[^1]: Data files are generally added to `.gitignore` to prevent them from being pushed to GitHub.
 
 
 
