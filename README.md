@@ -7,6 +7,10 @@ This repository outlines best practices for writing reproducible code and struct
 Templates include:
 - [r_module.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_module.R): A template for writing individual R modules.
 - [r_function.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_function.R): A template for writing well-documented and formatted R functions.
+- [javascript_module.js](https://github.com/bgcasey/code_standards/blob/main/templates/javascript_module.js): A template for writing individual JavaScript modules.
+- [javascript_function.js](https://github.com/bgcasey/code_standards/blob/main/templates/javascript_function.js): A template for writing well-documented and formatted JavaScript functions.
+- [python_module.js](https://github.com/bgcasey/code_standards/blob/main/templates/python_module.py): A template for writing individual Python modules.
+- [python_function.js](https://github.com/bgcasey/code_standards/blob/main/templates/python_function.py): A template for writing well-documented and formatted Python functions.
 - [r_project_template](https://github.com/bgcasey/r_project_template): An R project template that provides a structured directory for organizing data, scripts, outputs, and documentation.  
 
 The goal of this repository is to provide standards that improve collaboration, streamline code reviews, and make it easier to revisit past work.
@@ -15,7 +19,7 @@ The goal of this repository is to provide standards that improve collaboration, 
 1. **Sharing work with colleagues**:
     - Standardized templates and code conventions ensure that collaborators can easily understand, run, and build upon your work.
 2. **In-house review of your work**:
-    - A well-organized, reproducible codebase makes internal reviews easier. Team members or supervisors can quickly grasp your methods and results by examiming the code, making it easier to identify and troubleshoot any issues.
+    - A well-organized, reproducible codebase makes internal reviews easier. Team members or supervisors can quickly grasp your methods and results by examining the code, making it easier to identify and troubleshoot any issues.
 3. **Sharing work with your future self**:
     - Revisiting old projects is easier when everything is well-documented and logically structured. This reduces the learning curve when returning to a project after time away.
 
