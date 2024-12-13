@@ -113,7 +113,7 @@ Scripts should start with a header that includes the following components:
 | **Date**      | The creation or last modification date of the code, formatted as YYYY-MM-DD for consistency.                       |
 | **Inputs**    | A list of the input data, files, or parameters required for the script to run, including file paths or formats.    |
 | **Outputs**   | A description of the output produced by the script, including file names, formats, and what the results represent. |
-| **Notes**     | A concise explanation of what the code does, its purpose, and any important details about its function.            |
+| **Notes**     | A concise explanation of what the code does, its purpose, and any important details about its function. You can also use this section to list proposed improvements for the code for future iterations.           |
 
 
 **Example header in YAML-like format:**
@@ -176,6 +176,8 @@ Subdivide sections as needed with descriptive numbered subheadings:
 # This step filters the data to keep only relevant observations.
 filtered_data <- data %>% filter(variable == "value")
 ```
+
+Use four trailing dashes (-), equal signs (=), or hashtags (#) at the end of your headings to create discrete sections that are foldable and navigable within RStudio's  **Jump To** menu at the bottom of the editor.
 
 ---
 
