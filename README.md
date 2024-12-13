@@ -257,7 +257,7 @@ Data, code, and output files should be organized within a well-structured direct
 | ├── r_scripts/           | R scripts for data processing     |
 | │   └── r_module.R       | Template R script                 |
 | │   └── r_function.R     | Template R function               |
-| **2_pipeline/**          | Data processing pipeline          |
+| **2_pipeline/**          | Data processing pipeline [^1]     |
 | **3_output/**            | Results of analysis               |
 | ├── data/                | Processed datasets                |
 | ├── figures/             | Generated figures                 |
@@ -338,7 +338,7 @@ If you have any questions about your repositories, please contact [Brandon Allen
 
 ---
 
-[^1]: Data files are generally added to `.gitignore` to prevent them from being pushed to GitHub.
+[^1]: Data and pipeline files are generally added to `.gitignore` to prevent them from being pushed to GitHub.
 
 
 
