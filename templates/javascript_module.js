@@ -12,16 +12,16 @@
 
 /*
  * ---
- * title: Title
- * author: Your Name
- * created: YYYY-MM-DD
+ * title: [Title]
+ * author: [Your Name]
+ * created: [YYYY-MM-DD]
  * inputs: [List the required inputs]
  * outputs: [List the outputs produced by the script]
  * notes: 
- *  This script performs [briefly describe the main 
- *  purpose]. It uses [briefly describe data or object inputs] to 
- *  [describe the main processes]. The script produces [describe the 
- *  final output].
+ *  [A concise explanation of what the code does, its purpose, 
+ *  and any important details about its function. You can also use 
+ *  this section to list proposed improvements for the code for 
+ *  future iterations.]
  * ---
  */
 

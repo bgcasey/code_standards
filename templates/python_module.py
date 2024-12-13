@@ -11,16 +11,16 @@ notes:
 
 """
 ---
-title: Title
-author: Your Name
-created: YYYY-MM-DD
+title: [Title]
+author: [Your Name]
+created: [YYYY-MM-DD]
 inputs: [list the required input files]
 outputs: [list the output files produced by the script]
 notes: 
-  This script performs [describe the main purpose of the script].
-  The script uses [briefly describe data or object inputs] to 
-  [briefly describe the main steps or processes]. The script 
-  produces [describe the final output].
+    [A concise explanation of what the code does, its purpose, 
+    and any important details about its function. You can also use 
+    this section to list proposed improvements for the code for 
+    future iterations.]
 ---
 """
 
