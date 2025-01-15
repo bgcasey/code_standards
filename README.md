@@ -286,10 +286,7 @@ Data, code, and output files should be organized within a well-structured direct
 | **README.md**            | Project overview and instructions                |
 
 
-
-A template repository can be found [here](https://github.com/bgcasey/r_project_template). It can be used to generate new GitHub repositories with the above directory structure. While the template is designed for R projects, projects in other programming environments should maintain a similar directory structure. 
-
-Below is an overview of the main folders in the project directory:
+Below is an overview of the main folders in a project directory:
 
 ### 0_data
 This folder holds all **raw and manipulated data** used in the project.
@@ -373,7 +370,20 @@ The **“front door”** to your project—an overview and instructions for repl
 - **6_bookdown**: Bookdown documentation for project vignettes, user guides, or tutorials.
 - **README.md**: The roadmap for anyone navigating or replicating the project.
 
+### Use a Template to Create a New Repository
 
+A template repository can be found [here](https://github.com/bgcasey/r_project_template). It can be used to generate new GitHub repositories with the above directory structure. 
+While the template is designed for R projects, projects in other programming environments should maintain a similar directory structure. 
+
+To create a new repository from the template:
+
+1. Navigate to the **main page** of the [template repository](https://github.com/bgcasey/r_project_template) in your browser.
+2. Look for the **“Use this template”** button (usually located on the top right side of top GitHub UI bar. 
+3. Click **“Use this template”** to open a drop-down menu. Click **"Create a new repository"** and follow the instructions.
+
+Below is a screenshot showing where to click **“Use this template”** on GitHub:
+
+![Screenshot of the "Use this template" button on GitHub](create_repository_from_template.png)
 
 
 ---
