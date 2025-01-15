@@ -435,7 +435,7 @@ Topics are a way for users to add “tags” to their repositories. This allows 
 GitHub Pages are a great resource for creating static HTML pages that can be shared ([https://abbiodiversity.github.io/AmphibianModels/](https://abbiodiversity.github.io/AmphibianModels/)). The *Bookdown* format is great for creating technical documents and is fairly easy to create and maintain. Each centre within the ABMI has methods for developing technical documentation, so this is not a requirement for GitHub users.
 
 ### Questions
-If you have any questions about your repositories, please contact [Brandon Allen](mailto:brandon.allen@ualberta.ca) or [Marcus Becker](mailto:mabecker@ualberta.ca).
+If you have any questions about your repositories, please contact [Brandon Allen](mailto:brandon.allen@ualberta.ca), [Brendan Casey](mailto:brendan.casey@ualberta.ca), or [Marcus Becker](mailto:mabecker@ualberta.ca).
 
 ---
 
