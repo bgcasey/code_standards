@@ -10,6 +10,7 @@
 # Code standards and templates
 
 ![In Development](https://img.shields.io/badge/Status-In%20Development-yellow)
+![Languages](https://img.shields.io/badge/Languages-R%20%7C%20JavaScript%20%7C%20Python-blue)
 
 This repository outlines best practices for writing reproducible code and structuring project directories.
 
