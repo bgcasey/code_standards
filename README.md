@@ -291,6 +291,13 @@ A template repository can be found [here](https://github.com/bgcasey/r_project_t
 
 Below is an overview of the main folders in the project directory:
 
+### README.md
+The **“front door”** to your project—an overview and instructions for replication.
+
+  - Explains the project’s goals, scope, and context.  
+  - Details how to set up the environment (required libraries, data sources, program languages).  
+  - Guides others (and your future self) on how to run the project steps or locate key files.
+
 ### 0_data
 This folder holds all **raw and manipulated data** used in the project.
 
@@ -355,12 +362,6 @@ Contains all **written materials**—manuscripts, reports, and supporting docume
     - Chapter .Rmd files: Individual sections of your Bookdown document (e.g., introduction, methodology, results). 
     - A compiled "book" (e.g. PDF or HTML)
  
-### README.md
-The **“front door”** to your project—an overview and instructions for replication or collaboration.
-
-  - Explains the project’s goals, scope, and context.  
-  - Details how to set up the environment (required libraries, data sources, program languages).  
-  - Guides others (and your future self) on how to run the project steps or locate key files.
 
 ### Putting It All Together
 
