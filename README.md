@@ -188,6 +188,81 @@ filtered_data <- data %>% filter(variable == "value")
 Use four trailing dashes (-), equal signs (=), or hashtags (#) at the end of your headings to 
 create discrete sections that are foldable and navigable within RStudio's  **Jump To** menu at the bottom of the editor.
 
+### Create new R files using a template
+
+You can create new R files based on the [r_module.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_module.R) template by adding a function to your .Rprofile file. 
+
+1. Run the following command in your R console to open the global .Rprofile for editing:
+
+```R
+file.edit("~/.Rprofile")
+```
+
+2. Add the following function and save:
+
+```R
+#' Create a New R Module Based on a GitHub Template
+#'
+#' This function creates a new R script using a template stored on 
+#' GitHub. The template is downloaded directly from the provided 
+#' URL, ensuring the latest version is used.
+#'
+#' @param filename Character. The name of the new R script file to 
+#' be created. Defaults to "new_script.R".
+#' @return Opens the newly created R script in the editor.
+#' 
+#' @example 
+#' # Example usage of the function
+#' new_r_module("my_new_script.R")
+#' # This will create a new R script named "my_new_script.R" using 
+#' # the GitHub template.
+#' 
+new_r_module <- function(filename = "new_script.R") {
+  # Step 1: Define the GitHub URL for the template
+  github_template_url <- "https://raw.githubusercontent.com/bgcasey/code_standards/main/templates/r_module.R"
+  
+  # Step 2: Download the template from GitHub to a temporary file
+  temp_template <- tempfile(fileext = ".R")
+  tryCatch(
+    {
+      download.file(github_template_url, temp_template, quiet = TRUE)
+      message("Template downloaded successfully!")
+    },
+    error = function(e) {
+      stop("Failed to download template: ", e$message)
+    }
+  )
+  
+  # Step 3: Copy the template to the specified filename
+  tryCatch(
+    {
+      file.copy(temp_template, filename, overwrite = TRUE)
+      message("New R module created: ", filename)
+      
+      # Step 4: Open the new file in the editor
+      file.edit(filename)
+    },
+    error = function(e) {
+      stop("Failed to create the new R module: ", e$message)
+    }
+  )
+  
+  # Step 5: Return a success message
+  return(invisible(filename))
+}
+```
+
+3. Restart R. 
+
+4. Now you can use the function to create new R files.
+
+```R
+new_r_module("my_new_script.R")
+```
+
+This will create a new R script named "my_new_script.R" using the [r_module.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_module.R) template. 
+
+
 
 
 ---
