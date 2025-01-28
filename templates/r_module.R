@@ -1,14 +1,4 @@
 # ---
-# title: R Module Template
-# author: Brendan Casey
-# created: 2024-12-13
-# notes: 
-#   Template for creating properly formatted and documented R
-#   modules.
-# ---
-
-
-# ---
 # title: [Title]
 # author: [Your Name]
 # created: [YYYY-MM-DD]
