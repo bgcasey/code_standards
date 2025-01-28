@@ -1,13 +1,3 @@
-# ---
-# title: R functions template
-# author: Brendan Casey
-# created: 2024-07-25
-# notes: 
-#   Template for creating properly formatted and  
-#   documented R functions
-# ---
-
-
 #' [Title of the Function]
 #'
 #' [Brief description of what the function does]
