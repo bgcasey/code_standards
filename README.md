@@ -22,13 +22,7 @@
 
 
 
-This repository outlines best practices for writing reproducible code and structuring project directories.
-
----
-
-## Goal
-
-The goal of this repository is to provide standards that improve collaboration, streamline code reviews, and make it easier to revisit past work.
+This repository outlines best practices for writing reproducible code and structuring project directories. The goal is to provide standards that improve collaboration, streamline code reviews, and make it easier to revisit past work.
 
 **Why use these standards?**
 1. **Sharing work with colleagues**:
@@ -45,7 +39,7 @@ While the examples provided are focused on R, the basic principles apply to any 
 ---
 
 ## Table of Contents
-- [1. Templates](#1-templates)  
+- [1. Script Templates](#1-script-templates)  
 - [2. Code Style](#2-code-style)  
 - [3. Documenting Code](#3-documenting-code)  
 - [4. Documenting Functions](#4-documenting-functions)  
@@ -55,9 +49,10 @@ While the examples provided are focused on R, the basic principles apply to any 
 
 ---
 
-## 1 Code Templates
+## 1 Script Templates
 
-This section provides starter files to help you apply the standards quickly and consistently across projects.  
+Use these templates as a starting point for writing reproducible, well-structured scripts.  
+They provide a consistent header, sectioning, and commenting style to make code easier to read, review, and reuse.  
 
 - [r_module.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_module.R): A template for writing individual R modules.
 - [r_function.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_function.R): A template for writing well-documented and formatted R functions.
@@ -66,6 +61,8 @@ This section provides starter files to help you apply the standards quickly and 
 - [python_module.js](https://github.com/bgcasey/code_standards/blob/main/templates/python_module.py): A template for writing individual Python modules.
 - [python_function.js](https://github.com/bgcasey/code_standards/blob/main/templates/python_function.py): A template for writing well-documented and formatted Python functions.
 - [r_project_template](https://github.com/bgcasey/r_project_template): An R project template that provides a structured directory for organizing data, scripts, outputs, and documentation.  
+
+---
 
 ## 2. Code Style
 
