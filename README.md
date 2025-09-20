@@ -6,10 +6,21 @@
 
 
 
+
 # Code standards and templates
 
 ![In Development](https://img.shields.io/badge/Status-In%20Development-yellow)
 ![Languages](https://img.shields.io/badge/Languages-R%20%7C%20JavaScript%20%7C%20Python-blue)
+
+
+
+> [!IMPORTANT]
+> These standards have been developed for **internal use within the ABMI Science Centre**.
+>
+> The purpose of these guidelines is to promote consistency and reproducibility across Science Centre projects, making collaboration and review easier. That said, every project is unique. If you adjust the
+> structure, please note the changes and your reasoning so they’re clear to others.
+
+
 
 This repository outlines best practices for writing reproducible code and structuring project directories.
 
@@ -41,7 +52,8 @@ While the examples provided are focused on R, the basic principles apply to any 
 - [2. Documenting Code](#2-documenting-code)
 - [3. Documenting Functions](#3-documenting-functions)
 - [4. Project Directory Structure](#4-project-directory-structure)
-- [5. ABMI GitHub Policy](#5-abmi-github-policy)
+- [5. Code Review](#5-code-review)
+- [6. ABMI GitHub Policy](#6-abmi-github-policy)
 ---
 ## 1. Code Style
 
@@ -460,10 +472,67 @@ Below is a screenshot showing where to click **“Use this template”** on GitH
 
 ![Screenshot of the "Use this template" button on GitHub](create_repository_from_template.png)
 
+---
+
+## 5. Code Review
+
+This rubric sets a common standard for reviewing Science Centre code. Its purpose is to make code easier to share, understand, and reuse.
+
+Reviews should focus on five areas:
+
+- **Code Formatting** – Consistency in style, naming, and readability.
+- **Project Structure** – Organized files and folders that follow shared conventions.
+- **Functional Correctness** – Code runs without errors and produces valid results.
+- **Efficiency** – Scales appropriately and avoids unnecessary work.
+- **Intelligibility** – Clear, documented, and easy to understand.
+    
+See the table below for full details.
+> [!Note]
+> The full, up-to-date rubric is available [here](https://docs.google.com/spreadsheets/d/1yLX6QnUd6H5gi1apLhoJ7lz3CToYLcXeXfPCW3h29IE/edit?usp=sharing)
+
+
+| **Section**                | **Standard**                                                                                       | **Meets** | **Needs Improvement** | **Not Met** | **Comments** |
+| -------------------------- | -------------------------------------------------------------------------------------------------- | --------- | --------------------- | ----------- | ------------ |
+| **Code Formatting**        | Styled according to a standard guide (e.g., tidyverse style guide)                                 |           |                       |             |              |
+|                            | Consistent indentation, spacing, and line length (e.g., 80-character limit)                        |           |                       |             |              |
+|                            | Variable and function names are concise, descriptive, and consistently named                       |           |                       |             |              |
+|                            | Code is free of commented-out, unused, or duplicate lines                                          |           |                       |             |              |
+|                            | Functions and code blocks are ordered logically, with consistent structure across files            |           |                       |             |              |
+| **Project Structure**      | File names follow a consistent naming convention (e.g., snake\_case, camelCase, kebab-case)        |           |                       |             |              |
+|                            | File names describe their purpose and use numeric prefixes (e.g., 01\_clean\_data.R)               |           |                       |             |              |
+|                            | Data is organized in `0_data/` with clear subfolders such as `external/` and `processed/`          |           |                       |             |              |
+|                            | Code is stored in `1_code/`, grouped by language if needed (e.g., `r_scripts/`, `python_scripts/`) |           |                       |             |              |
+|                            | Intermediate/temporary files stored in `2_pipeline/`                                               |           |                       |             |              |
+|                            | Outputs are in `3_output/` and organized into subfolders (e.g., figures/, models/, tables/, maps/) |           |                       |             |              |
+|                            | Manuscripts and reports are stored in `4_writing/`                                                 |           |                       |             |              |
+|                            | Includes a `README.md` explaining structure, setup, and dependencies                               |           |                       |             |              |
+|                            | Repository visibility follows ABMI policy (Repository visibility follows ABMI policy (private during development, public when appropriate)                                                          |           |                       |             |              |
+| **Functional Correctness** | Inputs are validated for type, length, and missing values                                          |           |                       |             |              |
+|                            | Edge cases handled appropriately (e.g., nulls, empty, extreme values)                              |           |                       |             |              |
+|                            | Environment and dependencies are reproducible and documented                                       |           |                       |             |              |
+|                            | Code runs without runtime errors                                                                   |           |                       |             |              |
+|                            | Logic is sound and does what’s intended                                                            |           |                       |             |              |
+|                            | Outputs validated against expected results                                                         |           |                       |             |              |
+|                            | Outputs are logically correct given the inputs                                                     |           |                       |             |              |
+|                            | Logging and error handling support debugging and provide informative messages                      |           |                       |             |              |
+| **Efficiency**             | Avoids redundant computations                                                                      |           |                       |             |              |
+|                            | Uses appropriate data structures for the task                                                      |           |                       |             |              |
+|                            | Code scales with larger datasets without significant performance issues                            |           |                       |             |              |
+|                            | Uses parallel processing when appropriate                                                          |           |                       |             |              |
+|                            | Uses batch processing when appropriate                                                             |           |                       |             |              |
+|                            | Reuses existing code or functions instead of duplicating code                                      |           |                       |             |              |
+| **Intelligibility**        | Code has a commented header with Title, Author, Date, Inputs, Outputs, and Notes                   |           |                       |             |              |
+|                            | Code is easy to read and understand                                                                |           |                       |             |              |
+|                            | Code is modular, with each part serving a clear, single purpose                                    |           |                       |             |              |
+|                            | Includes comments that explain *why*, not just *what*                                              |           |                       |             |              |
+|                            | Documentation (README, headers, inline comments) is complete and helpful                           |           |                       |             |              |
+|                            | Code is located in the appropriate file, folder, or package                                        |           |                       |             |              |
+|                            | Overall flow of the code is logical and easy to follow, with descriptive, numbered section headers |           |                       |             |              |
+
 
 ---
 
-## 5. ABMI GitHub Policy
+## 6. ABMI GitHub Policy
 
 GitHub (and Git) are powerful tools for facilitating reproducible code repositories. This will allow the ABMI to better showcase the technical work that goes into developing the variety of data products we provide. The purpose of the ABMI GitHub Policy is to provide general information to new users and outline a standard policy for what information is made available. The following document outlines:
 
