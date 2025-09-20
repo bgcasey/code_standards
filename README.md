@@ -5,11 +5,6 @@
 <img src="https://drive.google.com/uc?id=1szqLViKqTX5C1XF8uV7HbIst0i6Xvv7g" alt="Logo" width="300">
 
 
-<p align="center">
-  <a href="../../wiki"><img alt="Open the Wiki" src="https://img.shields.io/badge/Docs-Open%20the%20Wiki-blue" /></a>
-</p>
-
-
 # Code standards and templates
 
 ![In Development](https://img.shields.io/badge/Status-In%20Development-yellow)
