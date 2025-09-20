@@ -7,7 +7,7 @@
 
 # Code standards and templates
 
-![In Development](https://img.shields.io/badge/Status-In%20Development-yellow)
+![Maintenance](https://img.shields.io/badge/Status-Maintenance-green)
 ![Languages](https://img.shields.io/badge/Languages-R%20%7C%20JavaScript%20%7C%20Python-blue)
 
 
