@@ -466,7 +466,7 @@ The **“front door”** to your project—an overview and instructions for repl
 
 ### Use a Template to Create a New Repository
 
-A template repository can be found [here](https://github.com/bgcasey/r_project_template). It can be used to generate new GitHub repositories with the above directory structure. 
+A template repository can be found [here](https://github.com/ABbiodiversity/r_project_template). It can be used to generate new GitHub repositories with the above directory structure. 
 While the template is designed for R projects, projects in other programming environments should maintain a similar directory structure. 
 
 To create a new repository from the template:
