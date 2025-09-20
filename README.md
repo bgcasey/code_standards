@@ -24,14 +24,9 @@
 
 This repository outlines best practices for writing reproducible code and structuring project directories.
 
-Templates include:
-- [r_module.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_module.R): A template for writing individual R modules.
-- [r_function.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_function.R): A template for writing well-documented and formatted R functions.
-- [javascript_module.js](https://github.com/bgcasey/code_standards/blob/main/templates/javascript_module.js): A template for writing individual JavaScript modules.
-- [javascript_function.js](https://github.com/bgcasey/code_standards/blob/main/templates/javascript_function.js): A template for writing well-documented and formatted JavaScript functions.
-- [python_module.js](https://github.com/bgcasey/code_standards/blob/main/templates/python_module.py): A template for writing individual Python modules.
-- [python_function.js](https://github.com/bgcasey/code_standards/blob/main/templates/python_function.py): A template for writing well-documented and formatted Python functions.
-- [r_project_template](https://github.com/bgcasey/r_project_template): An R project template that provides a structured directory for organizing data, scripts, outputs, and documentation.  
+---
+
+## Goal
 
 The goal of this repository is to provide standards that improve collaboration, streamline code reviews, and make it easier to revisit past work.
 
@@ -45,17 +40,34 @@ The goal of this repository is to provide standards that improve collaboration, 
 
 While the examples provided are focused on R, the basic principles apply to any coding language. Clear documentation, structured file organization, and consistent coding styles enhances reproducibility and collaboration across different programming environments.
 
+
+
 ---
 
 ## Table of Contents
-- [1. Code Style](#1-code-style)
-- [2. Documenting Code](#2-documenting-code)
-- [3. Documenting Functions](#3-documenting-functions)
-- [4. Project Directory Structure](#4-project-directory-structure)
-- [5. Code Review](#5-code-review)
-- [6. ABMI GitHub Policy](#6-abmi-github-policy)
+- [1. Templates](#1-templates)  
+- [2. Code Style](#2-code-style)  
+- [3. Documenting Code](#3-documenting-code)  
+- [4. Documenting Functions](#4-documenting-functions)  
+- [5. Project Directory Structure](#5-project-directory-structure)  
+- [6. Code Review](#6-code-review)  
+- [7. ABMI GitHub Policy](#7-abmi-github-policy)  
+
 ---
-## 1. Code Style
+
+## 1 Code Templates
+
+This section provides starter files to help you apply the standards quickly and consistently across projects.  
+
+- [r_module.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_module.R): A template for writing individual R modules.
+- [r_function.R](https://github.com/bgcasey/code_standards/blob/main/templates/r_function.R): A template for writing well-documented and formatted R functions.
+- [javascript_module.js](https://github.com/bgcasey/code_standards/blob/main/templates/javascript_module.js): A template for writing individual JavaScript modules.
+- [javascript_function.js](https://github.com/bgcasey/code_standards/blob/main/templates/javascript_function.js): A template for writing well-documented and formatted JavaScript functions.
+- [python_module.js](https://github.com/bgcasey/code_standards/blob/main/templates/python_module.py): A template for writing individual Python modules.
+- [python_function.js](https://github.com/bgcasey/code_standards/blob/main/templates/python_function.py): A template for writing well-documented and formatted Python functions.
+- [r_project_template](https://github.com/bgcasey/r_project_template): An R project template that provides a structured directory for organizing data, scripts, outputs, and documentation.  
+
+## 2. Code Style
 
 Style R code according to the conventions outlined in the [tidyverse style guide](https://style.tidyverse.org/index.html).  Google's [R style guide](https://google.github.io/styleguide/Rguide.html) is based in this. While you are encouraged to familiarize yourself with the tidyverse guide, here are some highlights:
 
@@ -120,7 +132,7 @@ styler::style_file("file/path/file.R", style = tidyverse_style)
 See the `styler` [documentation](https://styler.r-lib.org/) for instructions on how to integrate `styler` into the RStudio GUI. 
 
 ---
-## 2. Documenting Code
+## 3. Documenting Code
 
 Proper documentation is crucial for ensuring code reproducibility. It allows colleagues and reviewers to fully understand your rationale, methods, and outputs. While there are many ways to document code, here are some recomendations:
 
@@ -279,7 +291,7 @@ This will create a new R script named "my_new_script.R" using the [r_module.R](h
 
 ---
 
-## 3. Documenting Functions
+## 4. Documenting Functions
 
 Functions should be well-documented to ensure they are understandable and easy to use. See [Roxygen2](https://roxygen2.r-lib.org/) for more information on function style conventions.
 
@@ -338,7 +350,7 @@ The function body contains the code that implements the function. Each major ste
 ```
 
 ---
-## 4. Project Directory Structure
+## 5. Project Directory Structure
 
 Data, code, and output files should be organized within a well-structured directory. For example:
 
@@ -474,7 +486,7 @@ Below is a screenshot showing where to click **“Use this template”** on GitH
 
 ---
 
-## 5. Code Review
+## 6. Code Review
 
 This rubric sets a common standard for reviewing Science Centre code. Its purpose is to make code easier to share, understand, and reuse.
 
@@ -532,7 +544,7 @@ See the table below for full details.
 
 ---
 
-## 6. ABMI GitHub Policy
+## 7. ABMI GitHub Policy
 
 GitHub (and Git) are powerful tools for facilitating reproducible code repositories. This will allow the ABMI to better showcase the technical work that goes into developing the variety of data products we provide. The purpose of the ABMI GitHub Policy is to provide general information to new users and outline a standard policy for what information is made available. The following document outlines:
 
